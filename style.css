@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #0a0a0a;
+    text-align: center;
+    color: #0a0a0a;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 3em;
+    color:white;
+}
+
+.units {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+
+.panel {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    min-width: 15em;
+    height: 13em;
+    position: relative;
+}
+
+.panel:nth-child(1) {
+    background: #ff40df;
+}
+
+.panel:nth-child(2) {
+    background: #0f36b4;
+}
+
+.panel:nth-child(3) {
+    background: #5dac3e;
+}
+
+.panel:nth-child(4) {
+    background: #2f915b;
+}
+
+.panel:nth-child(5) {
+    background: #bbbd4d;
+}
+
+.panel:nth-child(6) {
+    background: #c0498a;
+}
+
+.bg-unit {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7.5em;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.panel:nth-child(1) .bg-unit {
+    color: #c440ab;;
+}
+
+.panel:nth-child(2) .bg-unit {
+    color: #4a61a7;
+}
+
+.panel:nth-child(3) .bg-unit {
+    color: #65bd7f;
+}
+
+.panel:nth-child(4) .bg-unit {
+    color: #41bd78;
+}
+
+.panel:nth-child(5) .bg-unit {
+    color: #c9cc08;
+}
+
+.panel:nth-child(6) .bg-unit {
+    color: #80305c;
+}
+
+.panel h2, .panel input {
+    position: relative;
+}
+
+.panel h2 {
+    text-align: left;
+    padding-left: 1em;
+
+}
+.panel input::-webkit-outer-spin-button,
+.panel input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.panel input {
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.panel input:focus {
+    outline: none;
+}
+
+.tab {
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #0a0a0a;
+}
+
+.tablinks:hover{
+    color: #0a0a0a;
+    background-color: white;
+}
+
+.tab button {
+    color: rgb(226, 196, 196);
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: monospace;
+}
+
+
+
+
+ #header {
+    width: 100%;
+    height: 60px;
+    background: #010922;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    overflow: hidden;
+    
+}

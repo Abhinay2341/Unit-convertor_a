@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Unit-converter</title>
+  <div id="header">
+    <div id="logo"><a href="/"><img style="width: 48px;
+      height: 60px;" src="Screenshot (17).png" alt="UnitConverter"></a></div>
+  </div>
+</head>
+
+<body>
+  <h1 class="title">Unit Converter</h1>
+
+  </div>
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openUnit(event, 'Temperature')">Temperature</button>
+    <button class="tablinks" onclick="openUnit(event, 'Area')">Area</button>
+    <button class="tablinks" onclick="openUnit(event, 'Time')">Time</button>
+    <button class="tablinks" onclick="openUnit(event, 'Length')">Length</button>
+    <button class="tablinks" onclick="openUnit(event, 'Volume')">Volume</button>
+    <button class="tablinks" onclick="openUnit(event, 'Weight')">Weight</button>
+  </div>
+
+  <!--Each tab components-->
+  <div id="Temperature" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">°C</h1>
+        <h2>Celsius</h2>
+        <input type="number" id="celsius" value="0" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">°F</h1>
+        <h2>Fahrenheit</h2>
+        <input type="number" id="fahrenheit" value="32" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">K</h1>
+        <h2>Kelvin</h2>
+        <input type="number" id="kelvin" value="273.15" />
+      </div>
+    </div>
+  </div>
+
+  <div id="Area" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">m2</h1>
+        <h2>Meter Square</h2>
+        <input type="number" id="meter_square" value="1" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">km2</h1>
+        <h2>Kilometer Square</h2>
+        <input type="number" id="kilometer_square" value="0.000001" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">ha</h1>
+        <h2>Hectare</h2>
+        <input type="number" id="hectare" value="0.0001" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">mi2</h1>
+        <h2>Mile square</h2>
+        <input type="number" id="mile_square" value="3.861e-7" />
+      </div>
+    </div>
+  </div>
+
+  <div id="Time" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">h</h1>
+        <h2>Hour</h2>
+        <input type="number" id="hour" value="1" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">min</h1>
+        <h2>Minute</h2>
+        <input type="number" id="minute" value="60" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">s</h1>
+        <h2>Second</h2>
+        <input type="number" id="second" value="3600" />
+      </div>
+    </div>
+  </div>
+
+  <div id="Length" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">m</h1>
+        <h2>Meter</h2>
+        <input type="number" id="meter" value="1" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">km</h1>
+        <h2>Kilometer</h2>
+        <input type="number" id="kilometer" value="0.001" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">cm</h1>
+        <h2>Centimeter</h2>
+        <input type="number" id="centimeter" value="100" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">mm</h1>
+        <h2>Millimeter</h2>
+        <input type="number" id="millimeter" value="1000" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">μm</h1>
+        <h2>Micrometer</h2>
+        <input type="number" id="micrometer" value="1000000" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">nm</h1>
+        <h2>Nanometer</h2>
+        <input type="number" id="nanometer" value="1000000000" />
+      </div>
+    </div>
+  </div>
+
+  <div id="Volume" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">L</h1>
+        <h2>Liter</h2>
+        <input type="number" id="liter" value="1" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">mL</h1>
+        <h2>Milliliter</h2>
+        <input type="number" id="milliliter" value="1000" />
+      </div>
+    </div>
+  </div>
+
+  <div id="Weight" class="tabcontent">
+    <div class="units">
+      <div class="panel">
+        <h1 class="bg-unit">g</h1>
+        <h2>Gram</h2>
+        <input type="number" id="gram" value="1" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">kg</h1>
+        <h2>Kilogram</h2>
+        <input type="number" id="kilogram" value="0.001" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">mg</h1>
+        <h2>Milligram</h2>
+        <input type="number" id="milligram" value="1000" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">lbs</h1>
+        <h2>Pound</h2>
+        <input type="number" id="pound" value="0.00220462" />
+      </div>
+      <div class="panel">
+        <h1 class="bg-unit">oz</h1>
+        <h2>Ounce</h2>
+        <input type="number" id="ounce" value="0.035274" />
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
